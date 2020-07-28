@@ -1,15 +1,15 @@
-<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
  <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
 
  <g>
   <title>background</title>
-  <rect fill="#fff" id="canvas_background" height="202" width="202" y="-1" x="-1"/>
+  <rect fill="#fff" id="canvas_background" height="102" width="202" y="-1" x="-1"/>
   <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
    <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
   </g>
  </g>
  <g>
   <title>Layer 1</title>
-  <text style="cursor: move;" font-style="italic" font-weight="bold" stroke="#000" transform="matrix(1.637542324984795,0,0,2.377623672958255,-63.876418867884276,-124.92324917379209) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_1" y="104" x="44" stroke-width="0" fill="#000000">EXPRESS</text>
+  <text font-style="italic" font-weight="bold" stroke="#000" transform="matrix(1.637542324984795,0,0,2.377623672958255,-63.876418867884276,-124.92324917379209) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_1" y="81.841176" x="43.389329" stroke-width="0" fill="#000000">EXPRESS</text>
  </g>
 </svg>
