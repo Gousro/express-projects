@@ -16,6 +16,7 @@
 List of small projects created using express.js :book:
 
 * [Upload files](upload-files/)
+* [Blog App](blogapp/)
 
 
 ### :memo: License
