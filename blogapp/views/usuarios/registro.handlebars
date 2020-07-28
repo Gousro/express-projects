@@ -1,0 +1,37 @@
+{{#each erros}}
+    <div class="alert alert-danger mx-auto mt-4 mb-4">{{texto}}</div>
+{{else}}
+    
+{{/each}}
+<div class="card mx-auto mt-4 mb-4">
+    <div class="card-body">
+        <h4 class="card-title text-center">Cadastro de usuário</h4>
+        <form action="" method="POST">
+            <div class="form-group">
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" class="form-control" placeholder="Ex.: Ana Clara"
+                    aria-describedby="nomeHelp" required>
+                <small id="nomeHelp" class="text-muted">Digite seu nome.</small>
+            </div>
+            <div class="form-group">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Ex.: exemple@email.com"
+                    aria-describedby="emailHelp"  required>
+                <small id="emailHelp" class="text-muted">Digite seu email.</small>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha: </label>
+                <input type="password" name="senha" id="senha" class="form-control" placeholder="********"
+                    aria-describedby="senhaHelp"  required>
+                <small id="senhaHelp" class="text-muted">Digite sua senha de no mínimo 6 dígitos.</small>
+            </div>
+            <div class="form-group">
+                <label for="senha2">Repita a senha: </label>
+                <input type="password" name="senha2" id="senha2" class="form-control" placeholder="********"
+                    aria-describedby="senha2Help"  required>
+                <small id="senha2Help" class="text-muted">Digite a mesma senha do campo anterior para validação.</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+    </div>
+</div>

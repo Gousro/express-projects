@@ -1,0 +1,39 @@
+<div class="card mt-4 mb-4">
+    <div class="card-body">
+        <h4 class="card-title text-center">{{postagem.titulo}}</h4>
+        <small class="text-muted float-right">Data de criação: {{#formatDate postagem.data}}{{/formatDate}}</small><br>
+        <p class="card-text mt-4">{{postagem.conteudo}}</p>
+    </div>
+    <div class="card-body text-center">
+        <a href="/" class="card-link">Voltar</a>
+    </div>
+</div>
+
+<div class="card">
+    <h4 class="card-header">Comentários: </h4>
+    <div class="card-body mt-4 mb-4">
+        <form action="/postagem/{{postagem.slug}}/addcomentario" method="post">
+            <div class="form-group">
+                <label for="titulo_c">Título: </label>
+                <input class="form-control" type="text" name="titulo" id="titulo_c" placeholder=" {{postagem.titulo}}">
+            </div>
+            <div class="form-group">
+                <label for="comentario">Comentário: </label>
+                <textarea class="form-control" name="conteudo" id="comentario" cols="30" rows="3" placeholder="Escreva aqui o que achou da postagem."></textarea>
+            </div>
+            <input type="submit" value="Comentar" class="btn btn-primary">
+        </form>
+    </div>
+</div>
+<div class="card mt-4 mb-4">
+    {{#if user.comentario}}
+    <div class="card-body mt-4 mb-4">
+        <small class="text-muted float-right"><strong>{{user.nome}}</strong><br>{{#formatDate comentario.data}}{{/formatDate}}</small><br>
+        <p class="card-text">{{comentario.titulo}}</p>
+        <p class="card-text">{{comentario.conteudo}}</p>
+    </div>
+    {{else}}
+    <h4 class="card-header text-center">Nenhum comentário registrado.</h4>
+    <h6 class="text-center mt-4 mb-4">Sejá o primeiro a comentar.</h6>
+    {{/if}}
+</div>
